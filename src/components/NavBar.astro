@@ -1,0 +1,23 @@
+---
+const sections = [
+  { url: '/', name: 'Home' },
+  { url: '/traditional-vs-sustainable/', name: 'Traditional vs Sustainable' },
+  { url: '/reinvestment-scorecard/', name: 'Reinvestment Scorecard' },
+  { url: '/swacc/', name: 'SWACC' },
+  { url: '/dual-statements/', name: 'Dual Statements' },
+  { url: '/carbon-budget/', name: 'Carbon Budget' },
+  { url: '/human-social-capital/', name: 'Human & Social Capital' },
+  { url: '/blockchain-transparency/', name: 'Blockchain & Transparency' },
+  { url: '/policy-recommendations/', name: 'Policy Recommendations' },
+  { url: '/download/', name: 'Download PDF' },
+  { url: '/publications/', name: 'Other Publications' }
+];
+---
+<nav class="navbar">
+  <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:1rem;">
+    <a href="/" class="logo" style="color:#fff;font-weight:700;">User Cost Accounting</a>
+    <ul style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:1rem;">
+      {sections.map(s => <li><a style="color:#fff;" href={s.url}>{s.name}</a></li>)}
+    </ul>
+  </div>
+</nav>
