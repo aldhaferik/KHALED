@@ -1,0 +1,10 @@
+# macOS clutter
+.DS_Store
+
+# dependencies & builds
+node_modules/
+dist/
+
+# secrets / keys
+key.txt*
+.env*
