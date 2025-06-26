@@ -1,7 +1,11 @@
 ---
-layout: "../layouts/BaseLayout.astro"
-title: "Download PDF"
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Download PDF";
 ---
-<h1>Download PDF</h1>
-<p>Content coming soon. Replace this placeholder with detailed content for the Download PDF section.</p>
-<p><a class="btn" href="/pdf/UserCostAccountingArticle.pdf">Download PDF</a></p>
+<BaseLayout title={title}>
+  <h1>Download PDF</h1>
+  <p>
+    Download the latest full User Cost Accounting Framework PDF below.
+  </p>
+  <a href="/UserCostAccountingFramework.pdf" download>Download PDF</a>
+</BaseLayout>

@@ -1,25 +1,100 @@
 ---
-layout: "../layouts/BaseLayout.astro"
-title: "Carbon Budget Accounting"
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Carbon Budget and Planetary Boundaries";
 ---
 
+<BaseLayout title={title}>
+  <h1>Carbon Budget and Planetary Boundaries</h1>
 
-## 5  Carbon Budget Accounting (`carbon-budget.astro`)
+  <section>
+    <h2>Why Carbon Budgeting Matters</h2>
+    <p>
+      Traditional financial accounting treats CO<sub>2</sub> emissions as externalities—ignored in the balance sheet. However, the planetary boundaries framework recognizes that exceeding safe carbon budgets threatens not just companies, but the habitability of the planet itself.
+    </p>
+    <ul>
+      <li><strong>Carbon budget:</strong> The maximum amount of CO<sub>2</sub> that can be emitted to limit global warming to 1.5°C or 2°C.</li>
+      <li><strong>Planetary boundaries:</strong> Scientifically defined limits for critical earth systems, including climate, water, and biodiversity.</li>
+    </ul>
+    <p>
+      Your research shows how integrating these concepts into accounting radically improves risk assessment, strategy, and disclosure for extractives and heavy industry.
+    </p>
+  </section>
 
-```md
-<h1>Carbon Budget Accounting</h1>
+  <section>
+    <h2>Your Novel Contribution</h2>
+    <ul>
+      <li>Defines <strong>company-level carbon budgets</strong> by allocating the global budget down to firms, sectors, and assets.</li>
+      <li>Links financial statements to planetary boundaries, so sustainability is not just a narrative—but a quantitative constraint.</li>
+      <li>Proposes rigorous, enforceable methods for integrating carbon into user cost, SWACC, and financial performance measures.</li>
+    </ul>
+  </section>
 
-### A finite atmospheric reserve  
-Like a copper deposit, the atmosphere has a limited **CO₂ budget** consistent with 1.5 °C. Treat that allowance as **another depletable asset** :contentReference[oaicite:17]{index=17}.
+  <section>
+    <h2>How to Calculate a Carbon Budget</h2>
+    <ol>
+      <li>Start with the global carbon budget (IPCC data).</li>
+      <li>Allocate to your sector (e.g., oil, gas, mining) based on best available science and policy targets.</li>
+      <li>Downscale to the company or project level, accounting for reserves, production forecasts, and abatement potential.</li>
+      <li>Deduct carbon already emitted or committed through existing operations.</li>
+    </ol>
+    <div style="background:#f6f8fa;padding:1em;border-radius:8px;margin:1em 0;">
+      <strong>Equation:</strong> <br/>
+      <code>
+        Company Carbon Budget = (Global Budget) × (Sector Share) × (Company Share) − (Emitted + Committed CO<sub>2</sub>)
+      </code>
+    </div>
+  </section>
 
-### Carbon depletion expense  
-If Anglo American’s operational budget is 50 Mt CO₂ (2021-2040) and it emits 4 Mt this year, it must book a **carbon depletion charge** equal to 4 Mt × internal carbon price (e.g., $50 = $200 M) :contentReference[oaicite:18]{index=18}.
+  <section>
+    <h2>Integration With Financial Reporting</h2>
+    <ul>
+      <li><strong>Balance Sheet:</strong> Recognize “carbon liabilities” if reserves exceed future budget.</li>
+      <li><strong>Profit & Loss:</strong> Deduct user cost and abatement investments from income.</li>
+      <li><strong>SWACC:</strong> Discount future cash flows at a higher, risk-adjusted rate for “carbon non-compliance.”</li>
+    </ul>
+    <p>
+      This is a **paradigm shift**: companies face direct balance-sheet consequences for exceeding their fair share of the world’s carbon budget.
+    </p>
+  </section>
 
-| Year | Emissions (Mt) | Budget used | Budget left |
-|------|---------------|-------------|-------------|
-| 2020 | 4.5 | – | 50.0 |
-| 2023 | 3.6 | 11.6 Mt | 38.4 Mt |
-| …    | …  | … | … |
+  <section>
+    <h2>Practical Example: Oil Company Carbon Budget</h2>
+    <p>
+      <strong>Example:</strong> A national oil company holds reserves that, if fully developed, would emit 10 GtCO<sub>2</sub>. The company’s allocated budget for 2024–2050 is 3 GtCO<sub>2</sub>. Therefore:
+    </p>
+    <ul>
+      <li>Reserves above 3 GtCO<sub>2</sub> become “stranded assets.”</li>
+      <li>Balance sheet must disclose these stranded reserves and associated impairment losses.</li>
+      <li>Net income is reduced by user cost and carbon abatement expenses.</li>
+    </ul>
+  </section>
 
-Failing to recognise that cost today leaves firms unprepared for future offset or abatement spending and overstates sustainable income.
+  <section>
+    <h2>Interactive: Calculate Your Carbon Budget (Coming Soon)</h2>
+    <div style="border:1px dashed #aaa; padding:1rem; margin:1rem 0;">
+      <strong>[Interactive Carbon Budget Calculator Placeholder]</strong>
+    </div>
+  </section>
 
+  <section>
+    <h2>Significance for Stakeholders</h2>
+    <ul>
+      <li><strong>Investors:</strong> Gain visibility on climate risk and asset stranding.</li>
+      <li><strong>Policy makers:</strong> Enforce compliance through transparent accounting standards.</li>
+      <li><strong>Society:</strong> Ensure that resource wealth is not traded for planetary destabilization.</li>
+    </ul>
+    <p>
+      <strong>This approach operationalizes sustainability, making it measurable and enforceable for the first time in financial accounting.</strong>
+    </p>
+  </section>
+
+  <section>
+    <h2>References</h2>
+    <ol>
+      <li>Aldhaferi, K. (2023). User Cost, Resource Rents, and SWACC: A New Paradigm for Sustainable Resource Accounting. <em>Journal of Financial Accounting</em>.</li>
+      <li>IPCC (2021). Climate Change 2021: The Physical Science Basis.</li>
+      <li>Rockström et al. (2009). A safe operating space for humanity. <em>Nature</em>.</li>
+      <!-- Add further references as needed -->
+    </ol>
+  </section>
+</BaseLayout>

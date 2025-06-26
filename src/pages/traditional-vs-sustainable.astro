@@ -1,24 +1,121 @@
 ---
-layout: "../layouts/BaseLayout.astro"
-title: "Traditional vs Sustainable Accounting"
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Traditional vs Sustainable Accounting";
 ---
 
+<BaseLayout title={title}>
+  <h1>Traditional vs Sustainable Accounting</h1>
 
-<h1>Conventional Accounting vs. Sustainable Accounting</h1>
+  <section>
+    <h2>Overview</h2>
+    <p>
+      The resource sector—oil, gas, minerals—has traditionally relied on conventional accounting models that focus on immediate financial returns and capital maintenance, not long-term sustainability. <strong>User Cost Accounting (UCA)</strong> is a novel approach that corrects this, aligning financial reporting with stewardship, intergenerational equity, and the preservation of natural capital.
+    </p>
 
-### Why conventional profit is often an illusion  
-Under U.S. GAAP or IFRS, revenue from extracting copper, oil, or gas is booked as income while the depletion of the underlying resource is recognised only at historical cost, if at all. A mining firm can therefore appear highly profitable **while in fact liquidating its natural capital** :contentReference[oaicite:0]{index=0}.  
-Research on “genuine savings” shows those overstated earnings create a false sense of prosperity and can even coincide with **declining national or corporate wealth** :contentReference[oaicite:1]{index=1}.
+    <h2>Why Traditional Accounting Falls Short</h2>
+    <ul>
+      <li><strong>Ignores Depletion:</strong> Fails to deduct the true cost of resource depletion and the need for future replacement.</li>
+      <li><strong>No Sustainable CapEx Signal:</strong> Treats all capital expenditure (CapEx) the same, regardless of its long-term or sustainable value.</li>
+      <li><strong>Dividends Over Reinvestment:</strong> Prioritizes current payouts rather than reinvesting in future-proof assets.</li>
+      <li><strong>Short-termism:</strong> Reports income as if the resource is infinite, not finite.</li>
+    </ul>
 
-### Hicks, Keynes and El Serafy  
-- *Hicksian income* = the amount one can consume “without reducing the ability to consume the same in the future.”  
-- *Keynes’s user cost* revived by **El Serafy** splits every dollar of resource rent into  
-  1. **True income** – can be distributed, and  
-  2. **User cost** – must be reinvested so future income is undiminished :contentReference[oaicite:2]{index=2}.
+    <h2>What Makes Sustainable UCA Different?</h2>
+    <ul>
+      <li><strong>User Cost Deduction:</strong> UCA deducts a "user cost" from income to account for the extraction of non-renewable resources, encouraging reinvestment in sustainable assets.</li>
+      <li><strong>Seed Corn Principle:</strong> Echoes the agrarian rule: Don’t eat the seed corn. Only surplus beyond what's needed to sustain the resource base should be distributed.</li>
+      <li><strong>Comprehensive Reinvestment Requirement:</strong> UCA enforces a minimum threshold for reinvestment in renewable or future-proof capital.</li>
+      <li><strong>Dual Statement Model:</strong> Provides both traditional and sustainable income statements for transparency.</li>
+      <li><strong>Integrates Human, Social, and Natural Capital:</strong> Goes beyond financials to include impacts on people and ecosystems.</li>
+    </ul>
 
-### Sustainable accounting in one sentence  
-> “Treat a portion of resource revenue as a depreciation charge on natural capital.” :contentReference[oaicite:3]{index=3}  
+    <h2>Table: Key Differences</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Dimension</th>
+          <th>Traditional Accounting</th>
+          <th>Sustainable UCA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Resource Depletion</td>
+          <td>Often ignored or understated</td>
+          <td>Fully recognized, deducted via user cost</td>
+        </tr>
+        <tr>
+          <td>Capital Maintenance</td>
+          <td>Physical or financial capital only</td>
+          <td>Includes natural, human, and social capital</td>
+        </tr>
+        <tr>
+          <td>Distribution vs. Reinvestment</td>
+          <td>Favors immediate distribution</td>
+          <td>Requires sustainable reinvestment before distribution</td>
+        </tr>
+        <tr>
+          <td>Reporting Horizon</td>
+          <td>Short-term, annual</td>
+          <td>Long-term, intergenerational</td>
+        </tr>
+        <tr>
+          <td>Stakeholder Focus</td>
+          <td>Shareholders only</td>
+          <td>All stakeholders: society, future generations, environment</td>
+        </tr>
+        <tr>
+          <td>Performance Metrics</td>
+          <td>Profit, ROI</td>
+          <td>Reinvestment rate, reserve-replacement, CapEx sustainability share</td>
+        </tr>
+      </tbody>
+    </table>
 
-That single adjustment converts overstated, unsustainable profits into **Hicks-consistent income** and forces management to answer a simple question: *Where is the replacement capital?*
+    <h2>Key Equations & Illustrations</h2>
+    <h3>User Cost Formula</h3>
+    <pre>
+User Cost (UC) = [Net Present Value (NPV) of resource income if depleted sustainably]
+                 - [NPV if depleted as in current period]
+    </pre>
+    <h3>Traditional Income Statement (Simplified)</h3>
+    <pre>
+Revenue
+- Operating Costs
+= Gross Profit
+- Depreciation/Depletion (partial)
+= Net Profit (overstates true profit)
+    </pre>
+    <h3>Sustainable UCA Income Statement (Simplified)</h3>
+    <pre>
+Revenue
+- Operating Costs
+- Full Depletion (User Cost)
+- Minimum Sustainable CapEx
+= Net Distributable Surplus (true income)
+    </pre>
 
-*Key takeaway* – Without an explicit user-cost deduction, reported profits in extractive industries are **structurally inflated** and mislead shareholders, lenders, and policy-makers.
+    <h2>Importance of the Research</h2>
+    <ul>
+      <li>
+        <strong>Your paper pioneers a robust, evidence-backed framework for aligning financial accounting with sustainability.</strong>
+      </li>
+      <li>
+        UCA provides actionable, enforceable standards for governments, investors, and the public to hold companies accountable for stewardship of finite resources.
+      </li>
+      <li>
+        Introduces tools for rating, benchmarking, and comparing extractive industries—driving a new era of responsible reporting.
+      </li>
+    </ul>
+
+    <h2>References</h2>
+    <ol>
+      <li>
+        Your published article: <a href="/publications/">See full paper and supporting evidence.</a>
+      </li>
+      <li>
+        Classic resource accounting texts and international standards.
+      </li>
+    </ol>
+  </section>
+</BaseLayout>

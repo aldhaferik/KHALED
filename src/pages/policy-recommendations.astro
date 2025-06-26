@@ -1,16 +1,15 @@
 ---
-layout: "../layouts/BaseLayout.astro"
-title: "Policy Recommendations"
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Policy Recommendations";
 ---
-## 8  Policy Recommendations (`policy-recommendations.astro`)
-
-```md
-<h1>Policy Roadmap</h1>
-
-1. **Mandate supplementary “Statement of Resource Earnings & Reinvestment”** in financial reports (SEC, IASB).  
-2. **Tax incentives** for firms that re-invest ≥ user-cost threshold into green or diversification projects.  
-3. **Standard-setter guidance** on user-cost methodology and SWACC disclosure :contentReference[oaicite:22]{index=22}.  
-4. **Carbon-budget notes**: require disclosure of remaining corporate CO₂ allowance and depletion charges.  
-5. **Encourage blockchain pilots** for ESG data to ensure verifiability of user-cost deposits.  
-
-Adopting these measures aligns corporate accounting with inter-generational equity and accelerates the transition to a resource-constrained, low-carbon economy :contentReference[oaicite:23]{index=23}.
+<BaseLayout title={title}>
+  <h1>Policy Recommendations</h1>
+  <p>
+    Policies should incentivize sustainable resource use, reward future-proof investments, and ensure companies account for their impacts on nature and society.
+  </p>
+  <ul>
+    <li>Adopt user cost deduction in tax and reporting codes</li>
+    <li>Mandate dual reporting for major resource firms</li>
+    <li>Fund ESG innovation and research</li>
+  </ul>
+</BaseLayout>

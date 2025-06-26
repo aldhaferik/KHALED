@@ -1,22 +1,133 @@
 ---
-layout: "../layouts/BaseLayout.astro"
-title: "Dual Financial Statements"
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Dual Statements – Traditional vs Sustainable Financials";
 ---
-## 4  Dual Financial Statements (`dual-statements.astro`)
 
-```md
-<h1>Conventional vs Sustainable Financials</h1>
+<BaseLayout title={title}>
+  <h1>Dual Statements: Traditional vs Sustainable Financials</h1>
 
-<table>
-<tr><th>2023 Freeport-McMoRan</th><th>Traditional</th><th>Sustainable</th></tr>
-<tr><td>Revenue</td><td>$22.9 B</td><td>$22.9 B</td></tr>
-<tr><td>DD&A</td><td>$(2.07 B)</td><td>$(1.48 B)</td></tr>
-<tr><td><strong>User Cost</strong></td><td>–</td><td><strong>$(1.59 B)</strong></td></tr>
-<tr><td>EBIT</td><td>$6.23 B</td><td>$5.23 B</td></tr>
-<tr><td>Net Income</td><td>$3.75 B</td><td>$3.12 B</td></tr>
-</table>
+  <section>
+    <h2>Introduction to Dual Financial Statements</h2>
+    <p>
+      A key innovation in this research is the introduction of <strong>dual financial statements</strong>—reporting both <strong>traditional</strong> and <strong>sustainable</strong> accounts side by side. This approach provides maximum transparency and accountability in how resource rents and user costs are recognized.
+    </p>
+    <ul>
+      <li><strong>Traditional statements</strong> report based on historical cost and conventional depletion/depreciation.</li>
+      <li><strong>Sustainable statements</strong> integrate user-cost deduction, SWACC, and sustainability metrics to reflect intergenerational equity and responsible stewardship.</li>
+    </ul>
+  </section>
 
-The new **“User Cost (Natural-Capital Depreciation)”** line removes profits derived from asset liquidation :contentReference[oaicite:14]{index=14}.  
-On the balance sheet those amounts accumulate in a **Natural-Capital Replacement Reserve** – effectively a self-funded sovereign-wealth-like fund inside the company :contentReference[oaicite:15]{index=15}.
+  <section>
+    <h2>Why Traditional Accounting Fails</h2>
+    <ul>
+      <li>Ignores resource depletion externalities and the cost to future generations.</li>
+      <li>Masks the erosion of natural capital and societal wealth in resource-based economies.</li>
+      <li>Fails to incentivize or reflect sustainable reinvestment.</li>
+    </ul>
+  </section>
 
-*Investor benefit* – dual reporting makes clear whether dividends are paid from true earnings or from consuming the mine itself :contentReference[oaicite:16]{index=16}.
+  <section>
+    <h2>Sustainable Statement Adjustments</h2>
+    <ul>
+      <li><strong>User-Cost Deduction:</strong> A portion of resource rent is earmarked for future generations and deducted from net income.</li>
+      <li><strong>SWACC Discounting:</strong> The sustainable cost of capital (SWACC) is applied to all future cash flows.</li>
+      <li><strong>Recognition of Green/Social CapEx:</strong> Capital invested in sustainability is highlighted, not buried in general CapEx.</li>
+    </ul>
+    <p>
+      The <strong>net result</strong> is a more honest picture of true performance, sustainability, and risk.
+    </p>
+  </section>
+
+  <section>
+    <h2>Detailed Example: Dual Statement Walkthrough</h2>
+    <table style="width:100%;border-collapse:collapse;margin:1rem 0;">
+      <thead>
+        <tr>
+          <th style="border-bottom:1px solid #ccc;">Account</th>
+          <th style="border-bottom:1px solid #ccc;">Traditional</th>
+          <th style="border-bottom:1px solid #ccc;">Sustainable</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Revenue</td>
+          <td>$100,000,000</td>
+          <td>$100,000,000</td>
+        </tr>
+        <tr>
+          <td>Operating Costs</td>
+          <td>$50,000,000</td>
+          <td>$50,000,000</td>
+        </tr>
+        <tr>
+          <td>Depletion/Depreciation</td>
+          <td>$10,000,000</td>
+          <td>$10,000,000</td>
+        </tr>
+        <tr>
+          <td><strong>User-Cost Deduction</strong></td>
+          <td>–</td>
+          <td>$6,500,000</td>
+        </tr>
+        <tr>
+          <td>Net Income</td>
+          <td>$24,000,000</td>
+          <td>$17,500,000</td>
+        </tr>
+        <tr>
+          <td>CapEx (Sustainable)</td>
+          <td>$2,000,000</td>
+          <td><strong>$2,000,000</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Implied ROIC (SWACC)</strong></td>
+          <td>12%</td>
+          <td>8.5%</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      <em>This table is illustrative—replace with live data, interactive sliders, or user-uploaded company reports for real analysis.</em>
+    </p>
+  </section>
+
+  <section>
+    <h2>How To Build Dual Statements</h2>
+    <ol>
+      <li>Start with standard IFRS/GAAP accounts.</li>
+      <li>Deduct the calculated <strong>User Cost</strong> after net income.</li>
+      <li>Restate investment returns using <strong>SWACC</strong> instead of classic WACC or discount rates.</li>
+      <li>Disclose all green/social CapEx, carbon, and human capital investments explicitly.</li>
+    </ol>
+    <p>
+      <strong>Tip:</strong> See the methodology section for the full equations and Excel model.
+    </p>
+  </section>
+
+  <section>
+    <h2>Academic and Practical Significance</h2>
+    <ul>
+      <li><strong>Transparency:</strong> Enables stakeholders, regulators, and society to compare actual sustainability performance.</li>
+      <li><strong>Accountability:</strong> Investors and citizens can see if rents are truly future-proofed, not consumed.</li>
+      <li><strong>Policy Implications:</strong> Supports sustainable tax policy, royalty design, and resource management.</li>
+    </ul>
+    <p>
+      <strong>Novelty:</strong> This dual reporting system is one of the first of its kind, offering a rigorous, actionable framework for sustainable resource accounting.
+    </p>
+  </section>
+
+  <section>
+    <h2>Interactive: Build Your Own Dual Statement (Coming Soon)</h2>
+    <div style="border:1px dashed #aaa; padding:1rem; margin:1rem 0;">
+      <strong>[Interactive Dual Statement Tool Placeholder]</strong>
+    </div>
+  </section>
+
+  <section>
+    <h2>References</h2>
+    <ol>
+      <li>Your published paper: <cite>Khaled Aldhaferi, "User Cost, Resource Rents, and SWACC: A New Paradigm for Sustainable Resource Accounting", <em>Journal of Financial Accounting</em>, 2023.</cite></li>
+      <!-- Add further references as needed -->
+    </ol>
+  </section>
+</BaseLayout>

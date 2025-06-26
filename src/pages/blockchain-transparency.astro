@@ -1,23 +1,15 @@
 ---
-layout: "../layouts/BaseLayout.astro"
-title: "Blockchain & Data Transparency"
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Blockchain & Transparency";
 ---
----
-
-## 7  Blockchain & Data Transparency (`blockchain-transparency.astro`)
-
-```md
-<h1>Securing ESG Data with Blockchain</h1>
-
-### The transparency gap  
-Sustainable metrics are only credible if stakeholders trust the data. A **blockchain-based ESG ledger** stores immutable records of production, emissions, and reinvestment flows, deterring green-washing :contentReference[oaicite:20]{index=20}.
-
-**Conceptual architecture**  
-1. ERP & sensor data feed a permissioned chain.  
-2. Each user-cost transfer mints a token (proof of reinvestment).  
-3. Auditors and investors verify tokens in real-time.
-
-A Canadian mining pilot already tested this model for shared ESG data trusts :contentReference[oaicite:21]{index=21}.
-
-
-
+<BaseLayout title={title}>
+  <h1>Blockchain & Transparency</h1>
+  <p>
+    Blockchain technology can underpin reliable, real-time reporting of user cost, resource flows, and compliance, increasing trust in sustainable accounting disclosures.
+  </p>
+  <ul>
+    <li>Immutable records for audits</li>
+    <li>Enhances supply chain transparency</li>
+    <li>Automates regulatory compliance</li>
+  </ul>
+</BaseLayout>
