@@ -35,7 +35,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: user_cost_site/dist   # <── built folder
+          path: usercost_site/dist   # <── built folder
           
   deploy:
     runs-on: ubuntu-latest
