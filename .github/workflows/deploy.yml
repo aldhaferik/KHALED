@@ -27,11 +27,9 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies   # <── all three steps get WD
-        working-directory: user_cost_site
         run: npm ci                  # (or npm install)
 
       - name: Build
-        working-directory: user_cost_site
         run: npm run build
 
       - name: Upload artifact
