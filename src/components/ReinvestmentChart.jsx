@@ -1,4 +1,3 @@
-import React from 'react';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, LineElement, PointElement, CategoryScale, LinearScale, Legend, Tooltip } from 'chart.js';
 ChartJS.register(LineElement, PointElement, CategoryScale, LinearScale, Legend, Tooltip);

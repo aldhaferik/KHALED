@@ -15,9 +15,7 @@ declare module 'astro:content' {
 			[key: string]: unknown;
 		};
 	}
-}
 
-declare module 'astro:content' {
 	type Flatten<T> = T extends { [K: string]: infer U } ? U : never;
 
 	export type CollectionKey = keyof AnyEntryMap;
